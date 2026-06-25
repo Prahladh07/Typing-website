@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Type Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <header class="app-header">
+            <h1 class="logo">⚡ PRAHLADH.TYPE</h1>
+            
+            <div class="time-options-container">
+                <span class="options-label">Select Test Duration:</span>
+                <button class="time-btn active" data-time="15">15s</button>
+                <button class="time-btn" data-time="30">30s</button>
+                <button class="time-btn" data-time="60">60s</button>
+            </div>
+        </header>
+
+        <div class="workspace">
+            
+            <div class="typing-section">
+                <div class="section-header">
+                    <span class="status-indicator">Test Field</span>
+                    <div id="live-timer">Remaining: 30s</div>
+                </div>
+                
+                <div id="text-display-box"></div>
+                
+                <input type="text" id="user-typing-field" placeholder="Click here and start typing to begin the speed run..." autocomplete="off">
+            </div>
+
+            <div class="stats-sidebar">
+                <h3>Dashboard</h3>
+                <hr>
+                <div class="stat-item">
+                    <label>Words / Min</label>
+                    <div id="stat-wpm" class="stat-number">0</div>
+                </div>
+                <div class="stat-item">
+                    <label>Chars / Min</label>
+                    <div id="stat-cpm" class="stat-number">0</div>
+                </div>
+                <div class="stat-item">
+                    <label>Accuracy</label>
+                    <div id="stat-accuracy" class="stat-number">0%</div>
+                </div>
+                <div class="stat-item">
+                    <label>Speed Tier</label>
+                    <div id="stat-persona" class="stat-string">-</div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="action-footer">
+            <button id="reset-engine-btn">Reset Engine</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
