@@ -61,7 +61,7 @@ body {
 }
 
 .typing-section {
-    flex: 2; 
+    width: 65%; 
     background-color: #22212c;
     border-radius: 12px;
     padding: 25px;
@@ -95,12 +95,11 @@ body {
 
 .incorrect {
     color: #ff007f !important; 
-    background-color: rgba(255, 0, 127, 0.1);
+    background-color: #3a1e2d; 
 }
 
 #user-typing-field {
-    width: 100%;
-    box-sizing: border-box;
+    width: 95%; 
     background-color: #1a1921;
     border: 1px solid #ff007f;
     border-radius: 6px;
@@ -111,14 +110,11 @@ body {
 }
 
 .stats-sidebar {
-    flex: 1; 
+    width: 30%; 
     background-color: #22212c;
     border-radius: 12px;
     padding: 20px;
     border: 1px solid #2d2b3a;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .stats-sidebar h3 {
@@ -171,11 +167,9 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    transition: all 0.2s;
 }
 
 #reset-engine-btn:hover {
     border-color: #00f5d4;
     color: #00f5d4;
-    box-shadow: 0 0 10px rgba(0, 245, 212, 0.2);
 }
